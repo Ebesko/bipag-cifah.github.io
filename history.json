@@ -1,33 +1,60 @@
-﻿[
-  {
-    "num": "22-1.1_a",
-    "nom": " Grundmodul Antike",
-    "ECTS": 10,
-    "semestre": 1,
-    "choix": "Obligatoire"
-  },
+[
+    {
+        "num": "22-1.1_a",
+        "nom": "Grundmodul Antike",
+        "ECTS": "10",
+        "semestre": 1,
+        "choix": "Obligatoire"
+    },
+    {
+        "num": "22-1.1_b",
+        "nom": "Grundmodul Mittelalter/ FrÃ¼he Neuzeit - Moderne (PARTIE 1)",
+        "ECTS": "20",
+        "semestre": 1,
+        "choix": "Obligatoire, sur deux semestres (Ici partie 1)"
+    },
 
-  {
-    "num": "22-1.2_b",
-    "nom": "Grundmodul Mittelalter/ Frühe Neuzeit - Moderne",
-    "ECTS": 20,
-    "semestre": 2,
-    "choix": "Obligatoire"
-  },
+    {
+        "num": "22-1.1_b",
+        "nom": "Grundmodul Mittelalter/ FrÃ¼he Neuzeit - Moderne (PARTIE 2)",
+        "ECTS": "20",
+        "semestre": 2,
+        "choix": "Obligatoire, sur deux semestres (Ici partie 2)"
+    },
 
-  {
-    "num": "22-2.5",
-    "nom": "Modul Geschichte und Öffentlichkeit Sommerschulen",
-    "ECTS": 10,
-    "semestre": 3,
-    "choix": "Obligatoire"
-  },
-
-  {
-    "num": "22-3.1/22-3.2",
-    "nom": "Hauptmodul Vormoderne oder Hauptmodul Moderne",
-    "ECTS": 10,
-    "semestre": 4,
-    "choix": "Obligatoire"
-  }
+    {
+        "num": "22-3.1",
+        "nom": "Hauptmodul Vormoderne",
+        "ECTS": "10",
+        "semestre": 4,
+        "choix": "Ne valider qu'un Hauptmodul de votre choix"
+    },
+    {
+        "num": "22-3.2",
+        "nom": "Hauptmodul Moderne",
+        "ECTS": "10",
+        "semestre": 4,
+        "choix": "Ne valider qu'un Hauptmodul de votre choix"
+    },
+    {
+        "num": "22-3.9",
+        "nom": "Bachelorarbeit",
+        "ECTS": "10",
+        "semestre": 4,
+        "choix": "Obligatoire"
+    },
+    {
+        "num": "22-2.5",
+        "nom": "Modul Geschichte und Ã–ffentlichkeit (1ère école d'été)",
+        "ECTS": "10",
+        "semestre": 2,
+        "choix": "Représente l'école d'été, a lieu en Septembre. (1ère participation)"
+    },
+    {
+        "num": "22-2.5",
+        "nom": "Modul Geschichte und Ã–ffentlichkeit (2nde école d'été)",
+        "ECTS": "10",
+        "semestre": 4,
+        "choix": "Représente l'école d'été, a lieu en Septembre. (2nde participation)"
+    }
 ]
