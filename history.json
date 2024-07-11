@@ -6,9 +6,10 @@
         "semestre": 1,
         "choix": "Obligatoire"
     },
+    
     {
         "num": "22-1.1_b",
-        "nom": "Grundmodul Mittelalter/ Frühe Neuzeit - Moderne (PARTIE 1)",
+        "nom": "Grundmodul Mittelalter/ Frühe Neuzeit - Moderne (PARTIE 1) ",
         "ECTS": "20",
         "semestre": 1,
         "choix": "Obligatoire, sur deux semestres (Ici partie 1)"
@@ -16,7 +17,7 @@
 
     {
         "num": "22-1.1_b",
-        "nom": "Grundmodul Mittelalter/ Frühe Neuzeit - Moderne (PARTIE 2)",
+        "nom": "Grundmodul Mittelalter/ Frühe Neuzeit - Moderne (PARTIE 2) ",
         "ECTS": "20",
         "semestre": 2,
         "choix": "Obligatoire, sur deux semestres (Ici partie 2)"
