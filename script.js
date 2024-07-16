@@ -112,7 +112,7 @@ async function start() {
         console.log("else value:" + semester_gwlt.value);
 
         for (let modules in hist) {
-            if (modules.semestre == semester_gwlt.value):
+            if (modules.semestre == semester_gwlt.value) {
                 var numberElement = document.createElement("p");
                 numberElement.innerText = hist[(semester_gwlt.value - 1)].num;
                 var nomElement = document.createElement("p");
@@ -130,10 +130,11 @@ async function start() {
                 divmodulen.appendChild(pointsElement);
                 divmodulen.appendChild(semesterElement);
                 divmodulen.appendChild(choiceElement);
+            }
         }
 
         for (let module_of_bild of bild) {
-            if (module_of_bild.semestre == semester_gwlt.value):
+            if (module_of_bild.semestre == semester_gwlt.value) {
                 var numberElement2 = document.createElement("p");
                 numberElement2.innerText = bild[(semester_gwlt.value - 1)].num;
                 var nomElement2 = document.createElement("p");
@@ -151,6 +152,7 @@ async function start() {
                 divmodulen_bild.appendChild(pointsElement2);
                 divmodulen_bild.appendChild(semesterElement2);
                 divmodulen_bild.appendChild(choiceElement2);
+            }
         }
     }
     
