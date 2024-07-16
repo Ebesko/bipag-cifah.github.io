@@ -50,7 +50,7 @@ async function start() {
     var semester_gwlt = document.getElementById("semester");
 
     // Récupération des cours depuis le fichier JSON:
-    //Histoire (dans tout les cas):
+    // Histoire (dans tout les cas):
     const reponse_history = await fetch("history.json");
     const hist = await reponse_history.json();
 
@@ -60,7 +60,7 @@ async function start() {
     console.log(semester_gwlt.value)
 
     if (semester_gwlt.value == "all") {
-        //Modules de mineure
+        // Modules de mineure
         for (let module_of_bild of bild) {
             console.log("in loop bild");
 
@@ -111,41 +111,47 @@ async function start() {
         //Si un semestre et pas tous les modules 
         console.log("else value:" + semester_gwlt.value);
 
-        var numberElement = document.createElement("p");
-        numberElement.innerText = hist[(semester_gwlt.value - 1)].num;
-        var nomElement = document.createElement("p");
-        nomElement.innerText = hist[(semester_gwlt.value - 1)].nom;
-        var pointsElement = document.createElement("p");
-        pointsElement.innerText = hist[(semester_gwlt.value - 1)].ECTS;
-        var semesterElement = document.createElement("p");
-        semesterElement.innerText = hist[(semester_gwlt.value - 1)].semestre;
-        var choiceElement = document.createElement("p");
-        choiceElement.innerText = hist[(semester_gwlt.value - 1)].choix;
+        for (let modules in hist) {
+            if (modules.semestre == semester_gwlt.value):
+                var numberElement = document.createElement("p");
+                numberElement.innerText = hist[(semester_gwlt.value - 1)].num;
+                var nomElement = document.createElement("p");
+                nomElement.innerText = hist[(semester_gwlt.value - 1)].nom;
+                var pointsElement = document.createElement("p");
+                pointsElement.innerText = hist[(semester_gwlt.value - 1)].ECTS;
+                var semesterElement = document.createElement("p");
+                semesterElement.innerText = hist[(semester_gwlt.value - 1)].semestre;
+                var choiceElement = document.createElement("p");
+                choiceElement.innerText = hist[(semester_gwlt.value - 1)].choix;
 
-        var divmodulen = document.querySelector(".modul-hist");
-        divmodulen.appendChild(numberElement);
-        divmodulen.appendChild(nomElement);
-        divmodulen.appendChild(pointsElement);
-        divmodulen.appendChild(semesterElement);
-        divmodulen.appendChild(choiceElement);
+                var divmodulen = document.querySelector(".modul-hist");
+                divmodulen.appendChild(numberElement);
+                divmodulen.appendChild(nomElement);
+                divmodulen.appendChild(pointsElement);
+                divmodulen.appendChild(semesterElement);
+                divmodulen.appendChild(choiceElement);
+        }
 
-        var numberElement2 = document.createElement("p");
-        numberElement2.innerText = bild[(semester_gwlt.value - 1)].num;
-        var nomElement2 = document.createElement("p");
-        nomElement2.innerText = bild[(semester_gwlt.value - 1)].nom;
-        var pointsElement2 = document.createElement("p");
-        pointsElement2.innerText = bild[(semester_gwlt.value - 1)].ECTS;
-        var semesterElement2 = document.createElement("p");
-        semesterElement2.innerText = bild[(semester_gwlt.value - 1)].semestre;
-        var choiceElement2 = document.createElement("p");
-        choiceElement2.innerText = bild[(semester_gwlt.value - 1)].choix;
+        for (let module_of_bild of bild) {
+            if (module_of_bild.semestre == semester_gwlt.value):
+                var numberElement2 = document.createElement("p");
+                numberElement2.innerText = bild[(semester_gwlt.value - 1)].num;
+                var nomElement2 = document.createElement("p");
+                nomElement2.innerText = bild[(semester_gwlt.value - 1)].nom;
+                var pointsElement2 = document.createElement("p");
+                pointsElement2.innerText = bild[(semester_gwlt.value - 1)].ECTS;
+                var semesterElement2 = document.createElement("p");
+                semesterElement2.innerText = bild[(semester_gwlt.value - 1)].semestre;
+                var choiceElement2 = document.createElement("p");
+                choiceElement2.innerText = bild[(semester_gwlt.value - 1)].choix;
 
-        var divmodulen_bild = document.querySelector(".modul-minor");
-        divmodulen_bild.appendChild(numberElement2);
-        divmodulen_bild.appendChild(nomElement2);
-        divmodulen_bild.appendChild(pointsElement2);
-        divmodulen_bild.appendChild(semesterElement2);
-        divmodulen_bild.appendChild(choiceElement2);
+                var divmodulen_bild = document.querySelector(".modul-minor");
+                divmodulen_bild.appendChild(numberElement2);
+                divmodulen_bild.appendChild(nomElement2);
+                divmodulen_bild.appendChild(pointsElement2);
+                divmodulen_bild.appendChild(semesterElement2);
+                divmodulen_bild.appendChild(choiceElement2);
+        }
     }
     
     document.getElementById("generated").style.display = 'grid';
