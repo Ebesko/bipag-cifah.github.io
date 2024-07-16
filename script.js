@@ -62,7 +62,6 @@ async function start() {
     if (semester_gwlt.value == "all") {
         // Modules de mineure
         for (let module_of_bild of bild) {
-            console.log("in loop bild");
 
             var numberElement2 = document.createElement("p");
             numberElement2.innerText = module_of_bild.num;
@@ -82,11 +81,9 @@ async function start() {
             divmodulen2.appendChild(semesterElement2);
             divmodulen2.appendChild(choiceElement2);
         } 
-        console.log("One full bild loop")
 
         // Modules d'Histoire
         for (let modules in hist) {
-            console.log("in loop hist");
             var module_of_hist = hist[modules];
 
             var numberElement = document.createElement("p");
@@ -111,8 +108,11 @@ async function start() {
         //Si un semestre et pas tous les modules 
         console.log("else value:" + semester_gwlt.value);
 
-        for (let modules in hist) {
-            if (modules.semestre == semester_gwlt.value) {
+        for (let module_of_hist in hist) {
+            if (module_of_hist.semestre == semester_gwlt.value) {
+
+                console.log("If de hist valide pour" + modules.semestre + "ou alors:" + module_of_hist.semestre);
+
                 var numberElement = document.createElement("p");
                 numberElement.innerText = hist[(semester_gwlt.value - 1)].num;
                 var nomElement = document.createElement("p");
@@ -135,6 +135,9 @@ async function start() {
 
         for (let module_of_bild of bild) {
             if (module_of_bild.semestre == semester_gwlt.value) {
+
+                console.log("If de bild valide pour" + module_of_bild.semestre);
+
                 var numberElement2 = document.createElement("p");
                 numberElement2.innerText = bild[(semester_gwlt.value - 1)].num;
                 var nomElement2 = document.createElement("p");
