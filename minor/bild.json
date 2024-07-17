@@ -8,6 +8,14 @@
   },
 
   {
+    "num": "22-BKG-GM50.000",
+    "nom": "MEGATEST",
+    "ECTS": 18,
+    "semestre": 1,
+    "choix": "Obligatoire"
+  },
+
+  {
     "num": "22-BKG-GM2",
     "nom": "Grundmodul Bild- und Kunstgeschichte II ",
     "ECTS": 10,
