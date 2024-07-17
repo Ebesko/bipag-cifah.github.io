@@ -106,11 +106,9 @@ async function start() {
         } 
     } else {
         //Si un semestre et pas tous les modules 
-        console.log("else value, semester_gwlt:" + semester_gwlt.value);
-
-        for (let module_of_hist in hist) {
-            console.log('module_of_hist' + module_of_hist + 'ou value' + module_of_hist.value + '; valeur attendue:' + semester_gwlt.value);
-            if (hist[module_of_hist].semestre == semester_gwlt.value) {
+        for (let module_of_hist of hist) {
+            console.log('module_of_hist: ' + module_of_hist + '; valeur attendue: ' + semester_gwlt.value);
+            if (module_of_hist.semestre == semester_gwlt.value) {
 
                 console.log("If de hist valide pour " + semester_gwlt.value);
 
@@ -131,6 +129,7 @@ async function start() {
                 divmodulen.appendChild(pointsElement);
                 divmodulen.appendChild(semesterElement);
                 divmodulen.appendChild(choiceElement);
+
             }
         }
 
