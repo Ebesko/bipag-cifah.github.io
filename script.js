@@ -109,10 +109,10 @@ async function start() {
         console.log("else value:" + semester_gwlt.value);
 
         for (let module_of_hist in hist) {
-            console.log('valeur de semestre:' + module_of_hist.semestre + "Ou alors" + modules.semestre + ";" + 'valeur attendue:' + semester_gwlt.value);
+            console.log('valeur de semestre:' + module_of_hist.semestre + ";" + 'valeur attendue:' + semester_gwlt.value);
             if (module_of_hist.semestre == semester_gwlt.value) {
 
-                console.log("If de hist valide pour " + modules.semestre + "ou alors:" + module_of_hist.semestre);
+                console.log("If de hist valide pour " + module_of_hist.semestre);
 
                 var numberElement = document.createElement("p");
                 numberElement.innerText = hist[(semester_gwlt.value - 1)].num;
