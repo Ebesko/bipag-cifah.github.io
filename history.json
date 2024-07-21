@@ -27,14 +27,14 @@
         "num": "22-3.1",
         "nom": "Hauptmodul Vormoderne",
         "ECTS": "10",
-        "semestre": 4,
+        "semestre": 3,
         "choix": "Ne valider qu'un Hauptmodul de votre choix"
     },
     {
         "num": "22-3.2",
         "nom": "Hauptmodul Moderne",
         "ECTS": "10",
-        "semestre": 4,
+        "semestre": 3,
         "choix": "Ne valider qu'un Hauptmodul de votre choix"
     },
     {
@@ -48,7 +48,7 @@
         "num": "22-2.5",
         "nom": "Modul Geschichte und Öffentlichkeit (1ère école d'été)",
         "ECTS": "10",
-        "semestre": 2,
+        "semestre": 3,
         "choix": "Représente l'école d'été, a lieu en Septembre. (1ère participation)"
     },
     {

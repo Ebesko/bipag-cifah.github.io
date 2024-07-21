@@ -8,14 +8,6 @@
   },
 
   {
-    "num": "22-BKG-GM50.000",
-    "nom": "MEGATEST",
-    "ECTS": 18,
-    "semestre": 1,
-    "choix": "Obligatoire"
-  },
-
-  {
     "num": "22-BKG-GM2",
     "nom": "Grundmodul Bild- und Kunstgeschichte II ",
     "ECTS": 10,
@@ -27,7 +19,23 @@
     "num": "22-BKG-MTM",
     "nom": "Theorien und Methoden der Bild- und Kunstgeschichte ",
     "ECTS": 10,
+    "semestre": 2,
+    "choix": "Obligatoire"
+  },
+
+  {
+    "num": "22-BKG-MTM",
+    "nom": "Theorien und Methoden der Bild- und Kunstgeschichte ",
+    "ECTS": 10,
     "semestre": 3,
+    "choix": "Obligatoire"
+  },
+
+  {
+    "num": "22-BKG-MVO",
+    "nom": "Visuelles Orientierungswissen",
+    "ECTS": 10,
+    "semestre": 4,
     "choix": "Obligatoire"
   },
 
