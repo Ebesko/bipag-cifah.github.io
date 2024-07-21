@@ -19,7 +19,6 @@ function hiddenBefore(id, text, btn) {
 }
 
 function getdiffvalues() {
-    const data = new FormData(myform);
     var year = document.getElementById("year");
     var nbftyp2 = document.getElementById("minortyptest");
     var nbfname = document.getElementById("minor");
@@ -39,7 +38,6 @@ async function start() {
     divmodulen_minor.innerHTML = "";
 
     // Fetch form data
-    const data = new FormData(myform);
     var year = document.getElementById("year");
     var nbftyp2 = document.getElementById("minortyp");
     var nbfname = document.getElementById("minor");
