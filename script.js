@@ -47,7 +47,7 @@ async function start() {
     const response_history = await fetch("history.json");
     const hist = await response_history.json();
 
-    console.log(nbftyp2 + nbfname + ".json")
+    console.log(nbftyp2.value + nbfname.value + ".json")
 
     const response_minor = await fetch("minor/bild.json");
     const minor = await response_minor.json();
