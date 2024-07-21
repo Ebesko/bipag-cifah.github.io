@@ -20,7 +20,6 @@ function hiddenBefore(id, text, btn) {
 
 function getdiffvalues() {
     const data = new FormData(myform);
-    var tonk = Object.fromEntries(data);
     var year = document.getElementById("year");
     var nbftyp2 = document.getElementById("minortyptest");
     var nbfname = document.getElementById("minor");
@@ -31,21 +30,18 @@ function getdiffvalues() {
 function minitest() {
     var nbfname = document.getElementById("minor");
     document.getElementById("to_show_when_generate").innerHTML = nbfname.value;
-
-    //
 }
 
 async function start() {
     // Clean before use
     document.getElementById("generated").innerHTML = "";
-    var divmodulen_bild = document.querySelector(".modul-minor");
-    divmodulen_bild.innerHTML = "";
+    var divmodulen_minor = document.querySelector(".modul-minor");
+    divmodulen_minor.innerHTML = "";
 
     // Fetch form data
     const data = new FormData(myform);
-    var tonk = Object.fromEntries(data);
     var year = document.getElementById("year");
-    var nbftyp2 = document.getElementById("minortyptest");
+    var nbftyp2 = document.getElementById("minortyp");
     var nbfname = document.getElementById("minor");
     var semester_gwlt = document.getElementById("semester");
 
@@ -53,10 +49,10 @@ async function start() {
     const response_history = await fetch("history.json");
     const hist = await response_history.json();
 
-    const response_bild = await fetch("minor/bild.json");
-    const bild = await response_bild.json();
+    console.log(nbftyp2 + nbfname + ".json")
 
-    console.log(semester_gwlt.value);
+    const response_minor = await fetch("minor/bild.json");
+    const minor = await response_minor.json();
 
     // Function to create and append course elements
     function appendCourseElements(course, containerClass) {
@@ -81,8 +77,8 @@ async function start() {
 
     if (semester_gwlt.value == "all") {
         // Append all minor courses
-        for (let module_of_bild of bild) {
-            appendCourseElements(module_of_bild, ".modul-minor");
+        for (let module_of_minor of minor) {
+            appendCourseElements(module_of_minor, ".modul-minor");
         }
 
         // Append all history courses
@@ -97,9 +93,9 @@ async function start() {
             }
         }
 
-        for (let module_of_bild of bild) {
-            if (module_of_bild.semestre == semester_gwlt.value) {
-                appendCourseElements(module_of_bild, ".modul-minor");
+        for (let module_of_minor of minor) {
+            if (module_of_minor.semestre == semester_gwlt.value) {
+                appendCourseElements(module_of_minor, ".modul-minor");
             }
         }
     }
